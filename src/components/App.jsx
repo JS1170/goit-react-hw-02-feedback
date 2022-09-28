@@ -1,4 +1,3 @@
-// import Counter from "./Counter/Counter";
 import { Component } from 'react';
 import Section from './Section/Section';
 import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
@@ -38,7 +37,8 @@ class App extends Component {
       <div>
         <Section title="Please leave feedback">
           <FeedbackOptions
-            options={['good', 'neutral', 'bad']}
+            // options={['good', 'neutral', 'bad']}
+            options={this.state}
             onLeaveFeedback={this.onClickBtn}
           />
         </Section>
@@ -59,5 +59,6 @@ class App extends Component {
     );
   }
 }
+
 
 export default App;
